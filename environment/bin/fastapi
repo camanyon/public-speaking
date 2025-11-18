@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/cameronanyon/Desktop/PUCLIC SPEAKING/environment/bin/python3.11" "$0" "$@"
+'''exec' "/Users/cameronanyon/Desktop/PUBLIC SPEAKING/environment/bin/python3.11" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

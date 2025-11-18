@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/cameronanyon/Desktop/PUCLIC SPEAKING/environment"
+VIRTUAL_ENV="/Users/cameronanyon/Desktop/PUBLIC SPEAKING/environment"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
