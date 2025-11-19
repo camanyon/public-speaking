@@ -5,8 +5,8 @@ function App() {
   const [category, setCategory] = useState('');
   const fetchTopic = async () => {
     const url = category 
-    ? `http://localhost:8000/api/topics/random?category=${category}`
-    : 'http://localhost:8000/api/topics/random';
+    ? `https://public-speaking-api-production.up.railway.app/api/topics/random?category=${category}`
+    : 'https://public-speaking-api-production.up.railway.app/api/topics/random';
   const response = await fetch(url);
   const data = await response.json();
   setTopic(data);
