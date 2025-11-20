@@ -10,10 +10,7 @@ print(f"Collection type: {type(collection)}")
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",  # For local development
-        "https://public-speaking-mu.vercel.app"  # For production!
-    ],
+    allow_origins=["*"],  # Allow all origins
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods (GET, POST, PUT, etc.)
     allow_headers=["*"],  # Allow all headers
