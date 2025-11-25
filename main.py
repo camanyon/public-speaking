@@ -34,8 +34,10 @@ async def addtopic(topic: dict):
 async def getrandom(category: str = None):
     # category is optional (defaults to None if not provided)If user visits /api/topics/random → category = None If user visits /api/topics/random?category=funny → category = "funny"
     if category:
-        pipeline = [{"$match": {"category": category}}]  # Filter by category first
-        {"$sample": {"size": 1}} #pick one form that category
+        pipeline = [
+        {"$match": {"category": category}},  # Filter by category first
+        {"$sample": {"size": 1}}  # Then pick random one
+    ]
     else: #if no category pick random
         pipeline = [{"$sample": {"size": 1}}] #special way to get random in mongodb takes all documents in collection and picks 1
     
